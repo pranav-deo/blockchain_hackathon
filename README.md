@@ -1,5 +1,7 @@
 # blockchain_hackathon
 
+## Abstract
+
 We have decentralized auctioneering using the blockchain. Our primary motivation behind choosing this topic is to remove the auctioneering places i.e., third parties, which take up a considerable amount of the profit from the seller.
 
  To do this, we require the seller and the bidders to sign a smart contract in which the seller puts up the item, and bidders bid on it. Firstly we define a clock that gives the bidders the time of 10 minutes for the bidders to bid on any item (we do this by using now keyword and variables startTime and stopTime). Then, the seller puts up the item. We make this possible by calling the function 'addNewItem.' Also, the bidders bid on it by calling the function 'bids.' The bids and the address values of the bidders are stored in the mappings  'bid' and 'add' respectively. The function 'findmaxbid' helps in finding the maximum bid among all the bids, and the function 'findmaxadd' helps in finding the maximum value bidder among all the bidders. The function 'Calculate_max' helps puts these two functions together to create the mappings for the total items bid.By using these functions, we finally define the 'buyItem' function, which pays the seller when the maximum bidder clicks the button, and the item gets sold to the maximum bidder. The 'getBidsResult'  returns the maximum bid for us to see in the run pane, and the 'getAddResult' returns the maximum bidder address for us to see in the run pane. These two functions are defined so that the other bidders can know who won the auction.
